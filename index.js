@@ -1,6 +1,7 @@
 const { Client, Collection } = require("discord.js");
 const { config } = require("dotenv");
 const fs = require("fs");
+const token = process.env.token;
 
 
 const client = new Client({
@@ -46,4 +47,4 @@ client.on("message", async message => {
         command.run(client, message, args);
 });
 
-client.login(TOKEN=NjkyOTM2Njg2MzYzMjEzODY1.Xn11Bg.SQg1bfh9NkHRun9LIiLqLGd6Yls);
+client.login(token);
